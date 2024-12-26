@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBE76713-FFF4-3CE1-0D79-ED5080A08569" name="TpVenta">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>67DDC5FB-1A20-876B-1D45-796D79786722</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_venta" id="AA00015B-9FAC-00F5-14AA-8CAA140B8454">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>6CE88608-56CC-B857-B7E2-2030B47F4895</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="1577FD5A-6255-33A8-B3F1-ECEF6DF4E026">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<comment>Tipo de venta: Contado, Credito, Efectivo, etc</comment>
+<generatorID>7A971298-A401-743D-0231-5F1E3645121C</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61ECF239-B24D-A768-6F4C-04013A915C7C" name="TpVenta_PK">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>052CB17D-7ADA-6AE7-AC48-5F0BD1D28ADF</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA00015B-9FAC-00F5-14AA-8CAA140B8454"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

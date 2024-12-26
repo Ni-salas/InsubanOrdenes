@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | InsuOrder</title>
+    <link rel="icon" href="../assets/images/LogoInsuban_Mini.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <div class="login-box">
+        <div class="logo-container">
+            <img src="../assets/images/LogoInsuban_Slogan_SinFondo.png" alt="Logo" class="logo">
+        </div>
+        <h1>Bienvenido a InsuOrder</h1>
+        <form method="POST" action="../backend/validar_login.php">
+            <div class="textbox">
+                <input type="text" placeholder="Usuario" name="usuario" required>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Contraseña" name="contraseña" required>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Olvidé mi contraseña</a>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn">Iniciar sesión</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Derechos reservados | Versión 2.0</p>
+    </footer>
+</body>
+</html>

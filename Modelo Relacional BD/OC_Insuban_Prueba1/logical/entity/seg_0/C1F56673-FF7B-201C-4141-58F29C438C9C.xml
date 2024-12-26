@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1F56673-FF7B-201C-4141-58F29C438C9C" name="OrdenCompra">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:26:06 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>OC</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="num_orden" id="BE8997E1-1415-EAC0-32CC-6F24D501F3FC">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:26:27 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="insumo" id="1B921BE5-C77C-8364-0E3F-32B2ABB05658">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:27:05 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad" id="081999CF-C8C9-1A4C-281F-B836A4FA1997">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:27:40 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="001919A3-F85E-6449-B29B-4850496269FB">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:27:56 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="8F120C93-FAAD-38D5-00D5-CD4A6CD86F13">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:32:47 UTC</createdTime>
+<generatorID>8378D558-9875-17FF-CFDB-CC4F36DA0E3B</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<referedAttribute>372C2A99-DDF6-828F-8113-58BA4638E8EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_solic" id="9C1975FA-EC93-D523-4707-8B6DC5EEED81">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:24 UTC</createdTime>
+<generatorID>1FDD5B95-1C57-EC33-C1F7-8D8DBBF8D3AC</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<referedAttribute>FD274C0C-8BAD-C293-0084-FA365615A655</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B92E1C1E-7BA6-4654-4DA1-B1D0CEA0B264" name="OrdenCompra PK">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:27:04 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE8997E1-1415-EAC0-32CC-6F24D501F3FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

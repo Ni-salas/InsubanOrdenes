@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="OC_Insuban_Prueba1" id="9BE6B6FE-A81C-3497-2683-AE5229DC1D19" version="3.5">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:17:32 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9BE6B6FE-A81C-3497-2683-AE5229DC1D19</designId>
+</OSDM_Design>
