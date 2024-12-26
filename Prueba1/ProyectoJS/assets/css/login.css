@@ -1,0 +1,97 @@
+/* Fondo general */
+body {
+    background-color: #0077cc; /* Azul de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del logo y el texto de bienvenida */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
+    padding: 10px;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 200px;  /* Tamaño del logo */
+    height: auto;  /* Mantiene la proporción del logo */
+}
+
+/* Caja de login */
+.login-box {
+    background-color: white; /* Fondo blanco para el formulario */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilo para los inputs */
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de envío */
+.btn-container {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* Enlace de "Olvidé mi contraseña" */
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+}

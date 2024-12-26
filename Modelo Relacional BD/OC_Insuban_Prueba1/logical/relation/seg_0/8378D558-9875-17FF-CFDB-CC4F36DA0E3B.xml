@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PROV_OC" directorySegmentName="seg_0" id="8378D558-9875-17FF-CFDB-CC4F36DA0E3B">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:32:47 UTC</createdTime>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<engineerTo>
+<item key="F254F89F-4E8E-DE29-F7FC-E89F87F18F5D" value="true"/>
+</engineerTo>
+<sourcePk>6B527A46-78D1-39F7-9D02-9B1B1B1C7ACF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6A0B44A1-4E14-37CE-3536-D82A901399FF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C1F56673-FF7B-201C-4141-58F29C438C9C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FADE5D30-4917-119E-99DB-5724A221BF3C" name="OrdenCompra">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>C1F56673-FF7B-201C-4141-58F29C438C9C</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<abbreviation>OC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="num_orden" id="DA474C1E-A5BB-2B78-2E99-A606AE9D0BE4">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>BE8997E1-1415-EAC0-32CC-6F24D501F3FC</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insumo" id="B62DA0A4-F2BA-470B-7186-25DF899BBEDE">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>1B921BE5-C77C-8364-0E3F-32B2ABB05658</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="FBAB2355-D2D0-FA3F-9913-6334732067BA">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>081999CF-C8C9-1A4C-281F-B836A4FA1997</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="66FB41B0-283E-C484-7C4C-45EA45F42473">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>001919A3-F85E-6449-B29B-4850496269FB</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Proveedor_rut" id="885809D6-5338-E1AF-E378-EBA2334FF8F9">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>8F120C93-FAAD-38D5-00D5-CD4A6CD86F13</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC6C423F-AE28-C00F-9CA8-0AB42778B2A7" referredColumn="0FD10FFC-102B-F052-0802-132772619C70"/>
+</associations>
+</Column>
+<Column name="Solicitante_cod_solic" id="E1D0F9DA-4115-91D3-0C82-60FB8E04CB84">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>9C1975FA-EC93-D523-4707-8B6DC5EEED81</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE6FDE45-322E-958D-2CAC-DE1F364631A2" referredColumn="BF5C103D-9E4C-FD8B-5295-BE4AFE745988"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14E983D3-FA7F-1700-544B-6F683F0CE0F9" name="OrdenCompra_PK">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>B92E1C1E-7BA6-4654-4DA1-B1D0CEA0B264</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA474C1E-A5BB-2B78-2E99-A606AE9D0BE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B78FF22-EA2A-56F5-0292-D6ADADFC2EDA" name="OrdenCompra_Proveedor_FK">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>8378D558-9875-17FF-CFDB-CC4F36DA0E3B</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="885809D6-5338-E1AF-E378-EBA2334FF8F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B98A3EDF-F947-AB3E-2D98-9CAF3B6FD28F" name="OrdenCompra_Solicitante_FK">
+<createdBy>Nicolas</createdBy>
+<createdTime>2024-12-07 19:33:42 UTC</createdTime>
+<generatorID>1FDD5B95-1C57-EC33-C1F7-8D8DBBF8D3AC</generatorID>
+<ownerDesignName>OC_Insuban_Prueba1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1D0F9DA-4115-91D3-0C82-60FB8E04CB84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Orden de Compra</title>
+    <link rel="stylesheet" href="../assets/css/crear_orden.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <img src="../assets/images/LogoInsuban_Mini.png" alt="Logo" class="logo">
+            <h1>Crear Orden de Compra</h1>
+        </header>
+
+        <main>
+            <form id="crearOrden" action="crear_pedido.php" method="POST">
+                <label for="proveedor">Proveedor:</label>
+                <select id="proveedor" name="proveedor[]" required>
+                    <option value="" disabled selected>Seleccione un proveedor</option>
+                </select>
+
+                <div id="insumos-container">
+                    <div class="insumo" id="insumo1">
+                        <input type="text" id="insumos1" name="insumos[]" placeholder="Insumo 1" required>
+                        <input type="number" id="cantidad1" name="cantidad[]" placeholder="Cantidad" required oninput="calcularNeto(1)">
+                        <input type="number" id="precio_unitario1" name="precio_unitario[]" placeholder="Precio Unitario" required oninput="calcularNeto(1)">
+                        <input type="text" id="neto1" name="neto[]" placeholder="Valor Neto" readonly>
+                        <button type="button" class="eliminar-btn hidden" onclick="eliminarInsumo(1)">Eliminar</button>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <button type="button" id="agregarInsumoBtn">Agregar Insumo</button>
+                    <button type="submit">Crear Orden</button>
+                    <button type="button" class="cancelar-btn" onclick="window.location.href = 'index.html';">Cancelar</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Derechos reservados | Versión 2.0</p>
+        </footer>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>
