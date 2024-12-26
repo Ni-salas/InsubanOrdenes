@@ -13,7 +13,7 @@
             <img src="../assets/images/LogoInsuban_Slogan_SinFondo.png" alt="Logo" class="logo">
         </div>
         <h1>Bienvenido a InsuOrder</h1>
-        <form method="POST" action="../backend/validar_login.php">
+        <form id="loginForm">
             <div class="textbox">
                 <input type="text" placeholder="Usuario" name="usuario" required>
             </div>
@@ -21,16 +21,17 @@
                 <input type="password" placeholder="Contraseña" name="contraseña" required>
             </div>
             <div class="forgot-password">
-                <a href="#">Olvidé mi contraseña</a>
+                <a href="/Frontend/views/restablecer_password.html">Olvidé mi contraseña</a>
             </div>
             <div class="btn-container">
                 <button type="submit" class="btn">Iniciar sesión</button>
             </div>
         </form>
     </div>
-
     <footer>
         <p>&copy; 2024 Derechos reservados | Versión 2.0</p>
     </footer>
+
+    <script src="../frontend/js/login.js"></script>
 </body>
 </html>

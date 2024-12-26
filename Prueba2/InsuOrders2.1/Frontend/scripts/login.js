@@ -1,28 +1,34 @@
-document.getElementById('loginForm').addEventListener('submit', async (event) => {
-    event.preventDefault();
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Evita la recarga de la página
 
-    const usuario = event.target.usuario.value;
-    const contraseña = event.target.contraseña.value;
+    // Obtener los valores de los campos
+    const usuario = document.querySelector('input[name="usuario"]').value;
+    const contraseña = document.querySelector('input[name="contraseña"]').value;
 
-    try {
-        const response = await fetch('http://localhost:3000/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ usuario, contraseña }),
-        });
+    // Crear el objeto con los datos del formulario
+    const formData = {
+        usuario: usuario,
+        contraseña: contraseña
+    };
 
-        const result = await response.json();
-
-        if (response.ok) {
-            alert('Inicio de sesión exitoso');
-            window.location.href = '../views/index.html';
+    // Enviar la solicitud de inicio de sesión con fetch (AJAX)
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.message === 'Autenticación exitosa') {
+            window.location.href = 'index.html';  
         } else {
-            alert(result.message || 'Usuario o contraseña incorrectos');
+            alert(data.message);
         }
-    } catch (error) {
+    })
+    .catch(error => {
         console.error('Error:', error);
-        alert('Ocurrió un error. Intente nuevamente.');
-    }
+        alert('Hubo un error en el servidor');
+    });
 });
