@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +12,11 @@
     </header>
 
     <main class="main-content">
+        <div class="actions-container">
+            <button id="regresar-btn">Regresar</button>
+            <input type="text" id="buscar-input" placeholder="Buscar proveedor...">
+            <button id="buscar-btn">Buscar</button>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -32,12 +36,16 @@
                 <!-- Los datos serán insertados dinámicamente -->
             </tbody>
         </table>
+        <div class="pagination-container">
+            <button id="anterior-btn">Anterior</button>
+            <button id="siguiente-btn">Siguiente</button>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Derechos reservados | Versión 2.0</p>
     </footer>
 
-    <script src="../scripts/ver_proveedores.js"></script>
+    <script src="../frontend/js/ver_proveedores.js"></script>
 </body>
 </html>

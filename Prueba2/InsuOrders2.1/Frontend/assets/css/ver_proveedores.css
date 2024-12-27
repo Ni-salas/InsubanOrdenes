@@ -24,12 +24,40 @@ body {
     height: auto;
 }
 
-/* Tabla de proveedores */
+/* Main Content */
 .main-content {
     flex: 1;
     padding: 20px;
 }
 
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#buscar-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Tabla de proveedores */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -64,6 +92,12 @@ tbody td {
     font-size: 14px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 /* Footer */
